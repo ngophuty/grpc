@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package data_proto;
+
+import "google/protobuf/empty.proto";
+
+service PostController {
+
+    rpc Create(Post) returns (Post) {}
+}
+
+message Post {
+
+    // message Mess {
+    string name = 1;
+    string student_id = 2;
+    string year = 3;
+    // }
+    // map <string,string> key = 4;
+    
+    // message objections {
+    //     string key1= 1;
+    //     string key2 =2 ;
+}
+
+
+
+// message Mess {
+//     string mess = 3;
+// }

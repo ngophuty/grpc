@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package blog_proto;
+
+import "google/protobuf/empty.proto";
+
+service PostController {
+
+    rpc Create(Post) returns (Post) {}
+
+}
+
+message Post {
+    message data {
+        string infrastructure = 1;
+        string device = 2;
+        string branch = 3;
+        string device_type =4;
+        string card_type =5 ;
+        string model =6 ;
+        message predictions {
+            
+        }
+    }
+
+}

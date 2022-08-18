@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package blog_proto;
+
+import "google/protobuf/empty.proto";
+
+service PostController {
+
+    rpc Create(Post) returns (Post) {}
+
+}
+
+message Post {
+    string id = 1;
+    string title = 2;
+    string content = 3;
+}
+
